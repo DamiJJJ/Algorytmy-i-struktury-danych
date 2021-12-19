@@ -93,3 +93,22 @@ class BST {
 let bst = new BST()
 bst.dodaj(5)
 bst.korzeń.klucz // wyświetla '5'
+
+//Zadanie 3
+
+let tab = [3, 90, 9, 546, 321, 987312, 352, 2, 6, 1, 6879]
+
+function bubbleSort(tab) {
+for(let i = 0; i < tab.length; i++) {
+for(let j = 0; j < tab.length - i - 1; j++){
+if(tab[j] < tab[j + 1]) {
+let temp = tab[j + 1];
+tab[j + 1] = tab[j];
+tab [j] = temp;
+}
+}
+}
+return tab;
+}
+
+bubbleSort(tab);
